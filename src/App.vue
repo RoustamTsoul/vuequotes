@@ -1,26 +1,40 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+ <div class="container">
+   <Quotes/>
+ </div>
+ 
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Quotes from './components/Quotes.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Quotes
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+}
+
+body{
+background-image: linear-gradient(to top, #30cfd0 10%, #330867 90%);
+font-family: 'Caveat', cursive;
+}
+
+.container{
+margin: 25px;
+width: 90%;
+height: 95vh;
+display: flex;
+text-align: center;
+flex-direction:column;
 }
 </style>
